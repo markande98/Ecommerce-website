@@ -3,7 +3,7 @@ body{
     margin: 0;
     font-family: Roboto, Noto, sans-serif;
 }
-.home-header{
+.home-header {
     width: 100vw;
     height: 4.5rem;
     display: flex;
@@ -26,6 +26,14 @@ body{
     font-weight: 600;
     font-size: 1rem;
     letter-spacing: 0.3rem;
+}
+.home-shop p{
+    padding: 0;
+    margin: 0;
+}
+.home-shop a{
+    text-decoration: none;
+    color: #000000;
 }
 .home-cart-logo{
     width: 40vw;
@@ -71,4 +79,40 @@ body{
     line-height: 2rem;
     margin: auto;
     font-size:small;
+}
+
+#phone-list p{
+    text-align: center;
+}
+#phone-list .l1{
+    margin: 0;
+}
+#phone-list .l2{
+    margin: 0.5rem;
+    font-size: 75%;
+    font-weight: lighter;
+}
+
+.phone-item-list{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.phone-item{
+    text-align: center;
+    width: 50vw;
+    margin: 5% 0;
+}
+.phone-item img{
+    width: 6rem;
+    height: 12rem;
+}
+.phone-item p:nth-child(even) {
+    font-size: 70%;
+    font-weight: bolder;
+    padding: 0 4%;
+}
+.phone-item p:nth-child(odd) {
+    font-size: 70%;
+    font-weight:lighter;
 }
