@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Noto, sans-serif;
+}
+.home-header{
+    width: 100vw;
+    height: 4.5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+.home-header img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.home-product-category{
+    width: 40vw;
+}
+.home-product-category img{
+    margin: 15% 20%;
+}
+.home-shop{
+    width: 20vw;
+    text-align: center;
+    margin-top: 7%;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+}
+.home-cart-logo{
+    width: 40vw;
+}
+.home-cart-logo img{
+    margin: 15% 0 0 60%;
+}
+
+#home-product-section img{
+    width: 100vw;
+    height: 15rem;
+}
+
+#home-product-section p{
+    margin: 3vh 30vw 2vh 30vw; 
+    width: 40vw;
+    text-align: center;
+}
+#home-product-section button{
+    margin: 3vh 30vw 7vh 30vw; 
+    width: 40vw;
+    text-align: center;
+}
+
+.home_button_1{
+    height: 40px;
+    background-color: #ffffff;
+}
+
+#home-footer{
+    text-align: center;
+}
+#home-footer p{
+ color: #000000;
+ font-weight: 100;
+ font-size: small;
+}
+#home-footer div{
+    background-color: black;
+    height: 2rem;
+    color: #ffffff;
+    width: 30vw;
+    line-height: 2rem;
+    margin: auto;
+    font-size:small;
+}
