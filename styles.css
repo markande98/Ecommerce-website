@@ -439,3 +439,260 @@ body{
     color: #ffffff;
 }
 
+/* cart styling */
+
+.phone-cart p{
+    text-align: center;
+}
+.phone-cart-details{
+    display: flex;
+    padding: 5%;
+}
+.phone-cart .phone-cart-details .phone-cart-product-image img{
+    width: 3rem;
+    height: 5rem;
+}
+.phone-cart-product-image{
+    text-align: center;
+    float: left;
+    width: 25%;
+    margin: auto 0;
+}
+.phone-cart-specification{
+    float: right;
+    width: 90%;
+    font-size: 80%;
+    padding: 5%;
+}
+.phone-cart-specs div{
+    margin: 4% 0;
+    font-weight: lighter;
+}
+.phone-cart-specs div:nth-child(3n){
+    margin:0 4.5%;
+}
+.phone-cart-specification div span{
+    margin: 0 4%;
+}
+
+.phone-cart-specs div span img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.phone-cart-name {
+    display: flex;
+}
+.phone-cart-name h1{
+    width: 85%;
+    float: left;
+    padding: 0;
+    margin: 2% 0;
+    font-size: 75%;
+}
+.phone-cart-name img{
+    width: 30%;
+    float: right;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 10%;
+}
+
+.cart-footer{
+    text-align: center;
+    margin-top: 70%;
+}
+.cart-footer p{
+ color: #000000;
+ font-weight: 100;
+ font-size: small;
+}
+.cart-footer div{
+    background-color: black;
+    height: 2rem;
+    color: #ffffff;
+    width: 30vw;
+    line-height: 2rem;
+    margin: auto;
+    font-size:small;
+}
+
+.total-cart-price{
+    font-weight: bold;
+    margin-left: 65%;
+    font-size: 80%;
+}
+
+/* checkout styling */
+
+.checkout-info{
+    margin-bottom: 20%;
+}
+.checkout-info p{
+    text-align: center;
+}
+.checkout-info .l1{
+    margin: 0;
+}
+.checkout-info .l2{
+    margin: 0.5rem;
+    font-size: 75%;
+    font-weight: lighter;
+}
+
+.checkout-details{
+    padding: 5% 8%;
+}
+.account-info{
+    margin: 0 0 5% 0;
+    font-size: small;
+    font-weight: bold;
+}
+
+form .email, form .mobile{
+    width: 97%;
+    margin: 5% 0;
+    height: 2rem;
+    border: none;
+    font-size: 100%;
+    border-bottom: 1px solid #b8b4b4;
+}
+
+.shipping-info{
+    margin: 5% 0;
+    font-size: small;
+    font-weight: bold;
+}
+
+form .address, form .city{
+    width: 97%;
+    margin: 5% 0;
+    height: 2rem;
+    border: none;
+    font-size: 100%;
+    border-bottom: 1px solid #b8b4b4;
+}
+form .state, form .code{
+    width: 47%;
+    margin: 5% 0;
+    height: 2rem;
+    border: none;
+    font-size: 100%;
+    border-bottom: 1px solid #b8b4b4;
+}
+
+.country-info{
+    font-size: 90%;
+}
+.country-info .country{
+    margin: 5% 0;
+}
+
+.country-info .type-of-country img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.country-info .type-of-country input{
+    width: 90%;
+    margin: 0;
+    height: 2rem;
+    border: none;
+    font-size: 100%;
+    font-weight:700;
+}
+
+.country-info .l1{
+    height: 1px;
+    border-bottom: 1px solid #b8b4b4;
+    width: 97%;
+}
+
+#billing-add-details {
+    display: none;
+    font-size: 90%;
+}
+#billing-add-details .country{
+    margin: 5% 0;
+}
+
+#billing-add-details .type-of-country img{
+    width: 1rem;
+    height: 1rem;
+}
+
+#billing-add-details .type-of-country input{
+    width: 90%;
+    margin: 0;
+    height: 2rem;
+    border: none;
+    font-size: 100%;
+    font-weight:700;
+}
+
+#billing-add-details .l1{
+    height: 1px;
+    border-bottom: 1px solid #b8b4b4;
+}
+
+.billing-info .billing-address{
+    margin: 5% 0;
+    font-size: small;
+    font-weight: bold;
+}
+.billing-info .b1{
+    margin: 0 3% 0 0;
+    padding: 0;
+    height: 1rem;
+    width: 1rem;
+}
+.billing-info label{
+    font-size: small;
+    font-weight: lighter;
+}
+
+.payment-info{
+    margin: 5% 0;
+    font-size: small;
+    font-weight: bold;
+}
+
+form .name, form .number{
+    width: 97%;
+    margin: 5% 0;
+    height: 2rem;
+    border: none;
+    font-size: 100%;
+    border-bottom: 1px solid #b8b4b4;
+}
+
+.payment-info .card-details input{
+    width: 30.5%;
+    margin: 5% 0;
+    height: 2rem;
+    border: none;
+    font-size: 120%;
+    border-bottom: 1px solid #b8b4b4;
+}
+
+.order-details .order{
+    margin: 5% 0;
+    font-size: small;
+    font-weight: bold;
+}
+.order-details .product-details span{
+    font-size: 70%;
+}
+.order-details .product-details span:nth-child(even){
+    margin-left: 22%;
+}
+
+.order-details .total-price{
+    margin: 10% 0;
+    color: #000000;
+}
+.order-details .total-price span{
+    font-size: 90%;
+}
+.order-details .total-price span:nth-child(even){
+    margin-left: 68%;
+}
