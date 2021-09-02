@@ -42,17 +42,17 @@ body{
     margin: 15% 0 0 60%;
 }
 
-#home-product-section img{
+.home-product-section img{
     width: 100vw;
     height: 15rem;
 }
 
-#home-product-section p{
+.home-product-section p{
     margin: 3vh 30vw 2vh 30vw; 
     width: 40vw;
     text-align: center;
 }
-#home-product-section button{
+.home-product-section button{
     margin: 3vh 30vw 7vh 30vw; 
     width: 40vw;
     text-align: center;
@@ -63,15 +63,15 @@ body{
     background-color: #ffffff;
 }
 
-#home-footer{
+.home-footer{
     text-align: center;
 }
-#home-footer p{
+.home-footer p{
  color: #000000;
  font-weight: 100;
  font-size: small;
 }
-#home-footer div{
+.home-footer div{
     background-color: black;
     height: 2rem;
     color: #ffffff;
@@ -83,13 +83,13 @@ body{
 
 /* phone */
 
-#phone-list p{
+.phone-list p{
     text-align: center;
 }
-#phone-list .l1{
+.phone-list .l1{
     margin: 0;
 }
-#phone-list .l2{
+.phone-list .l2{
     margin: 0.5rem;
     font-size: 75%;
     font-weight: lighter;
@@ -98,7 +98,11 @@ body{
 .phone-item-list{
     display: flex;
     flex-flow: row wrap;
-
+}
+.phone-item-list a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
 }
 .phone-item{
     text-align: center;
@@ -121,13 +125,13 @@ body{
 
 /* tablets */
 
-#tablet-list p{
+.tablet-list p{
     text-align: center;
 }
-#tablet-list .l1{
+.tablet-list .l1{
     margin: 0;
 }
-#tablet-list .l2{
+.tablet-list .l2{
     margin: 0.5rem;
     font-size: 75%;
     font-weight: lighter;
@@ -137,6 +141,11 @@ body{
     display: flex;
     flex-flow: row wrap;
 
+}
+.tablet-item-list a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
 }
 .tablet-item{
     text-align: center;
@@ -160,13 +169,13 @@ body{
 
 /* laptops */
 
-#laptop-list p{
+.laptop-list p{
     text-align: center;
 }
-#laptop-list .l1{
+.laptop-list .l1{
     margin: 0;
 }
-#laptop-list .l2{
+.laptop-list .l2{
     margin: 0.5rem;
     font-size: 75%;
     font-weight: lighter;
@@ -176,6 +185,11 @@ body{
     display: flex;
     flex-flow: row wrap;
 
+}
+.laptop-item-list a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
 }
 .laptop-item{
     text-align: center;
@@ -196,3 +210,232 @@ body{
     font-size: 70%;
     font-weight:lighter;
 }
+
+/* single phone detail */
+
+.single-phone-detail{
+    padding: 5%;
+}
+.single-phone-detail-image img{
+    width: 10rem;
+    height: 18rem;
+    margin: 0 25%;
+    text-align: center;
+}
+
+.single-phone-detail-description .description{
+    font-size: 90%;
+}
+.single-phone-detail-description .price{
+    font-size: 70%;
+    font-weight: lighter;
+}
+
+.single-phone-detail-description .features{
+    font-weight: lighter;
+    font-size: 100%;
+}
+.single-phone-detail li{
+    font-weight: lighter;
+    font-size: 80%;
+}
+
+.single-phone-detail .phone-specification{
+    margin: 10% 0;
+}
+
+.single-phone-detail .phone-specification .l1{
+    height: 1px;
+    width: 100%;
+    font-weight:100;
+    background-color: #7e7b7b;
+    margin: 8% 0;
+}
+
+.single-phone-detail ul{
+    margin-bottom: 20%;
+}
+
+.phone-specification .image{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 60%;
+}
+.phone-specification .phone-memory .image{
+    margin-left: 52%;
+}
+.phone-specification {
+    font-size: 80%;
+    font-weight: lighter;
+}
+.phone-specification .quantity-value, .phone-specification .ram-value, .phone-specification .memory-value{
+    margin: 0 5%;
+    font-weight:800;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer button{
+    bottom: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 4rem;
+    background-color: #080944;
+    color: #ffffff;
+}
+
+/* single tablet detail */
+
+.single-tablet-detail{
+    padding: 5%;
+}
+.single-tablet-detail-image img{
+    width: 10rem;
+    height: 18rem;
+    margin: 0 25%;
+    text-align: center;
+}
+
+.single-tablet-detail-description .description{
+    font-size: 90%;
+}
+.single-tablet-detail-description .price{
+    font-size: 70%;
+    font-weight: lighter;
+}
+
+.single-tablet-detail-description .features{
+    font-weight: lighter;
+    font-size: 100%;
+}
+.single-tablet-detail li{
+    font-weight: lighter;
+    font-size: 80%;
+}
+
+.single-tablet-detail .tablet-specification{
+    margin: 10% 0;
+}
+
+.single-tablet-detail .tablet-specification .l1{
+    height: 1px;
+    width: 100%;
+    font-weight:100;
+    background-color: #7e7b7b;
+    margin: 8% 0;
+}
+
+.single-tablet-detail ul{
+    margin-bottom: 20%;
+}
+
+.tablet-specification .image{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 60%;
+}
+.tablet-specification .tablet-memory .image{
+    margin-left: 52%;
+}
+.tablet-specification {
+    font-size: 80%;
+    font-weight: lighter;
+}
+.tablet-specification .quantity-value, .tablet-specification .ram-value, .tablet-specification .memory-value{
+    margin: 0 5%;
+    font-weight:800;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer button{
+    bottom: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 4rem;
+    background-color: #080944;
+    color: #ffffff;
+}
+
+/* single laptop detail */
+
+.single-laptop-detail{
+    padding: 5%;
+}
+.single-laptop-detail-image img{
+    width: 10rem;
+    height: 18rem;
+    margin: 0 25%;
+    text-align: center;
+}
+
+.single-laptop-detail-description .description{
+    font-size: 90%;
+}
+.single-laptop-detail-description .price{
+    font-size: 70%;
+    font-weight: lighter;
+}
+
+.single-laptop-detail-description .features{
+    font-weight: lighter;
+    font-size: 100%;
+}
+.single-laptop-detail li{
+    font-weight: lighter;
+    font-size: 80%;
+}
+
+.single-laptop-detail .laptop-specification{
+    margin: 10% 0;
+}
+
+.single-laptop-detail .laptop-specification .l1{
+    height: 1px;
+    width: 100%;
+    font-weight:100;
+    background-color: #7e7b7b;
+    margin: 8% 0;
+}
+
+.single-laptop-detail ul{
+    margin-bottom: 20%;
+}
+
+.laptop-specification .image{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 60%;
+}
+.laptop-specification .laptop-memory .image{
+    margin-left: 50%;
+}
+.laptop-specification {
+    font-size: 80%;
+    font-weight: lighter;
+}
+.laptop-specification .quantity-value, .laptop-specification .ram-value, .laptop-specification .memory-value{
+    margin: 0 5%;
+    font-weight:800;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer button{
+    bottom: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 4rem;
+    background-color: #080944;
+    color: #ffffff;
+}
+
