@@ -36,45 +36,24 @@
         <p class="l1">Checkout</p>
         <p class="l2">Shop is a demo app - form data will not be sent</p>
         <div class="checkout-details">
-            <div class="account-info">
-                Account information
-            </div>
-            <form>
-                <input type="email" placeholder="Email" class="email">
-                <input type="number" placeholder="Phone Number" class="mobile">
-            </form>
-            <div class="shipping-info">
-                Shipping Address
-            </div>
-            <form>
-                <input type="text" placeholder="Address" class="address">
-                <input type="text" placeholder="City" class="city">
-                <input type="text" placeholder="State/Province" class="state">
-                <input type="number" placeholder="Zip/Postal Code" class="code">
-            </form>
-            <div class="country-info">
-                <div class="country">Country</div>
-                <div class="type-of-country">
-                    <input type="text" placeholder="United States">
-                    <span><img src="./images/downward.png"></span>
-                </div>
-                <div class="l1"></div>
-            </div>
-            <div class="billing-info">
-                <div class="billing-address">
-                    Billing Address
+            <div class="check_1">
+                <div class="account-info">
+                    Account information
                 </div>
                 <form>
-                    <input type="checkbox" name="address" id="b1" onclick="f()">
-                    <label for="address"> Use different billing address</label>
+                    <input type="email" placeholder="Email" class="email">
+                    <input type="number" placeholder="Phone Number" class="mobile">
                 </form>
-                <div id="billing-add-details">
-                    <form>
-                        <input type="text" placeholder="Address" class="address">
-                        <input type="text" placeholder="City" class="city">
-                        <input type="text" placeholder="State/Province" class="state">
-                        <input type="number" placeholder="Zip/Postal Code" class="code">
-                    </form>
+                <div class="shipping-info">
+                    Shipping Address
+                </div>
+                <form>
+                    <input type="text" placeholder="Address" class="address">
+                    <input type="text" placeholder="City" class="city">
+                    <input type="text" placeholder="State/Province" class="state">
+                    <input type="number" placeholder="Zip/Postal Code" class="code">
+                </form>
+                <div class="country-info">
                     <div class="country">Country</div>
                     <div class="type-of-country">
                         <input type="text" placeholder="United States">
@@ -82,41 +61,72 @@
                     </div>
                     <div class="l1"></div>
                 </div>
+                <div class="billing-info">
+                    <div class="billing-address">
+                        Billing Address
+                    </div>
+                    <form>
+                        <input type="checkbox" name="address" id="b1" onclick="f()">
+                        <label for="address"> Use different billing address</label>
+                    </form>
+                    <div id="billing-add-details">
+                        <form>
+                            <input type="text" placeholder="Address" class="address">
+                            <input type="text" placeholder="City" class="city">
+                            <input type="text" placeholder="State/Province" class="state">
+                            <input type="number" placeholder="Zip/Postal Code" class="code">
+                        </form>
+                        <div class="country">Country</div>
+                        <div class="type-of-country">
+                            <input type="text" placeholder="United States">
+                            <span><img src="./images/downward.png"></span>
+                        </div>
+                        <div class="l1"></div>
+                    </div>
+                </div>
             </div>
-            <div class="payment-info">
+            <div class="check_2">
                 <div class="payment-info">
-                    Payment Method
+                    <div class="payment-info">
+                        Payment Method
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Cardholder Name" class="name">
+                        <input type="number" placeholder="Card Number" class="number">
+                    </form>
+                    <div class="expiry">
+                        Expiry
+                    </div>
+                    <form class="card-details">
+                        <input type="text" placeholder="Jan" class="month">
+                        <input type="number" placeholder="2016" class="year">
+                        <input type="number" placeholder="CVV" class="cvv">
+                    </form>
                 </div>
-                <form>
-                    <input type="text" placeholder="Cardholder Name" class="name">
-                    <input type="number" placeholder="Card Number" class="number">
-                </form>
-                <div class="expiry">
-                    Expiry
-                </div>
-                <form class="card-details">
-                    <input type="text" placeholder="Jan" class="month">
-                    <input type="number" placeholder="2016" class="year">
-                    <input type="number" placeholder="CVV" class="cvv">
-                </form>
-            </div>
-            <div class="order-details">
-                <div class="order">
-                    Order Summary
-                </div>
-                <div class="product-details">
-                    <span>Redmi 9A, 2GB RAM, 32 GB Memory</span>
-                    <span>Rs. 6,999</span>
-                </div>
-                <div class="total-price">
-                    <span>Total</span>
-                    <span>Rs. 6,999</span>
+                <div class="order-details">
+                    <div class="order">
+                        Order Summary
+                    </div>
+                    <div class="product-details">
+                        <span>Redmi 9A, 2GB RAM, 32 GB Memory</span>
+                        <span>Rs. 6,999</span>
+                    </div>
+                    <div class="total-price">
+                        <span>Total</span>
+                        <span>Rs. 6,999</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="checkout-place-footer">
         <button type="text">PLACE ORDER</button>
+    </footer>
+    <footer class="checkout-home-footer">
+        <p>Trending Devices</p>
+        <div>
+            DEMO ONLY
+        </div>
     </footer>
 </body>
 </html>
