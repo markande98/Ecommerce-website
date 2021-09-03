@@ -9,6 +9,12 @@ body{
     display: flex;
     flex-flow: row wrap;
 }
+.home-product-list{
+    display: none;
+}
+.phone-list .phone-image, .tablet-list .tablet-image , .laptop-list .laptop-image{
+    display: none;
+}
 .home-header img{
     width: 1.5rem;
     height: 1.5rem;
@@ -498,22 +504,21 @@ body{
 }
 
 .cart-footer{
-    text-align: center;
-    margin-top: 70%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-.cart-footer p{
- color: #000000;
- font-weight: 100;
- font-size: small;
-}
-.cart-footer div{
-    background-color: black;
-    height: 2rem;
+.cart-footer button{
+    bottom: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 4rem;
+    background-color: #080944;
     color: #ffffff;
-    width: 30vw;
-    line-height: 2rem;
-    margin: auto;
-    font-size:small;
+}
+
+.cart-home-footer{
+    display: none;
 }
 
 .total-cart-price{
@@ -683,7 +688,7 @@ form .name, form .number{
     font-size: 70%;
 }
 .order-details .product-details span:nth-child(even){
-    margin-left: 22%;
+    margin-left: 18%;
 }
 
 .order-details .total-price{
@@ -694,5 +699,975 @@ form .name, form .number{
     font-size: 90%;
 }
 .order-details .total-price span:nth-child(even){
-    margin-left: 68%;
+    margin-left: 65%;
+}
+
+.checkout-home-footer{
+    display: none;
+}
+
+.checkout-place-footer button{
+    bottom: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 4rem;
+    background-color: #080944;
+    color: #ffffff;
+}
+
+/* tablet resoluytion */
+
+@media screen and (max-width: 510px) {
+    .order-details .product-details{
+        font-size: 75%;
+    }
+    .order-details .total-price{
+        font-size: 90%;
+    }
+    .order-details .product-details span:nth-child(even){
+        margin-left: 33%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    .home-header .home-product-category img{
+        margin: 9%;
+    }
+    .home-header .home-shop{
+        margin-top: 4%;
+    }
+    .home-header .home-cart-logo img{
+        margin-left: 80%;
+        margin-top: 10%;
+    }
+    .home-product-section img{
+        height: 25rem;
+    }
+    .home-product-section .home_button_1{
+        width: 25%;
+        margin-left: 37%;
+        margin-right: 37%;
+    }
+    .home-footer div{
+        width: 18%;
+    }
+    .phone-list .phone-item-list .phone-item img{
+        width: 10rem;
+        height: 20rem;
+    }
+    .tablet-list .tablet-item-list .tablet-item img{
+        width: 10rem;
+        height: 20rem;
+    }
+    .laptop-list .laptop-item-list .laptop-item img{
+        width: 15rem;
+        height: 15rem;
+    }
+    .phone-list .phone-item-list .phone-item p{
+       font-size: 80%;
+    }
+    .tablet-list .tablet-item-list .tablet-item p{
+        font-size: 90%;
+     }
+    .laptop-list .laptop-item-list .laptop-item p{
+        font-size: 90%;
+    }
+    .single-phone-detail .single-phone-detail-image img{
+        width: 15rem;
+        height: 30rem;
+    }
+    .single-phone-detail .single-phone-detail-image{
+        text-align: center;
+    }
+    .single-phone-detail-description h1{
+        margin: 5% 0;
+    }
+    .single-phone-detail-description .price{
+        font-size: 90%;
+    }
+    .single-phone-detail-description .phone-specification .l1{
+        margin: 3% 0;
+    }
+    .single-phone-detail-description .phone-specification{
+        font-size: 90%;
+    }
+    .single-phone-detail-description .phone-specification .phone-ram .image{
+        margin-left: 70%;
+    }
+    .single-phone-detail-description .phone-specification .phone-memory .image{
+        margin-left: 65%;
+    }
+    .single-phone-detail-description .phone-specification .phone-quantity .image{
+        margin-left: 69.5%;
+    }
+    .single-phone-detail-description ul{
+        font-size: 120%;
+    }
+
+    .single-tablet-detail .single-tablet-detail-image img{
+        width: 15rem;
+        height: 30rem;
+    }
+    .single-tablet-detail .single-tablet-detail-image{
+        text-align: center;
+    }
+    .single-tablet-detail-description h1{
+        margin: 5% 0;
+    }
+    .single-tablet-detail-description .price{
+        font-size: 90%;
+    }
+    .single-tablet-detail-description .tablet-specification .l1{
+        margin: 3% 0;
+    }
+    .single-tablet-detail-description .tablet-specification{
+        font-size: 90%;
+    }
+    .single-tablet-detail-description .tablet-specification .tablet-ram .image{
+        margin-left: 70%;
+    }
+    .single-tablet-detail-description .tablet-specification .tablet-memory .image{
+        margin-left: 65%;
+    }
+    .single-tablet-detail-description .tablet-specification .tablet-quantity .image{
+        margin-left: 69.5%;
+    }
+
+    .single-tablet-detail-description ul{
+        font-size: 120%;
+    }
+
+    .single-laptop-detail .single-laptop-detail-image img{
+        width: 25rem;
+        height: 18rem;
+    }
+    .single-laptop-detail .single-laptop-detail-image{
+        text-align: center;
+    }
+    .single-laptop-detail-description h1{
+        margin: 5% 0;
+    }
+    .single-laptop-detail-description .price{
+        font-size: 90%;
+    }
+    .single-laptop-detail-description .laptop-specification .l1{
+        margin: 3% 0;
+    }
+    .single-laptop-detail-description .laptop-specification{
+        font-size: 90%;
+    }
+    .single-laptop-detail-description .laptop-specification .laptop-ram .image{
+        margin-left: 70%;
+    }
+    .single-laptop-detail-description .laptop-specification .laptop-memory .image{
+        margin-left: 65%;
+    }
+    .single-laptop-detail-description .laptop-specification .laptop-quantity .image{
+        margin-left: 69.5%;
+    }
+    .single-laptop-detail-description ul{
+        font-size: 120%;
+    }
+    .phone-cart-specification{
+        font-size: 100%;
+    }
+    .phone-cart-details{
+        padding-top: 0;
+    }
+    .phone-cart .phone-cart-details .phone-cart-product-image img{
+        height: 10rem;
+        width: 5rem;
+    }
+    .phone-cart .total-cart-price{
+        margin-left: 76%;
+    }
+    .checkout-details{
+        padding: 3%;
+    }
+    .checkout-info .checkout-details form .state, .checkout-info .checkout-details form .code{
+        width: 47.5%;
+    }
+    .checkout-info .checkout-details form .month, .checkout-info .checkout-details form .year, .checkout-info .checkout-details form .cvv{
+        width: 31.5%;
+    }
+    .checkout-info .checkout-details .order-details{
+        font-size: 100%;
+    }
+    .checkout-info .checkout-details .order-details .product-details span:nth-child(even){
+        margin-left: 59%;
+    }
+    .checkout-info .checkout-details .order-details .total-price span:nth-child(even){
+        margin-left: 81%;
+    }
+}
+
+/* tablet resolution */
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+    .home-header{
+        height: 6rem;
+    }
+    .home-header .home-product-category img{
+        display: none;
+    }
+    .home-product-list{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 33%;
+        width: 40%;
+    }
+    .home-product-list div{
+        font-size: 80%;
+        margin: 0 9.5%;
+        text-align: center;
+    }
+    .home-product-list a{
+        text-decoration: none;
+        color: #000000;
+        width: 33%;
+    }
+    .home-header .home-shop{
+        margin-top: 3%;
+    }
+    .home-header .home-cart-logo img{
+        margin-left: 80%;
+        margin-top: 7%;
+    }
+    .home-product-section img{
+        height: 30rem;
+    }
+    .home-product-section .home_button_1{
+        width: 15%;
+        margin-left: 42.5%;
+        margin-right: 42%;
+    }
+    .home-footer div{
+        width: 12%;
+    }
+    .phone-list .phone-image, .tablet-list .tablet-image , .laptop-list .laptop-image{
+        display: block;
+        width: 100%;
+        height: 25rem;
+    }
+    .phone-list .l1, .tablet-list .l1, .laptop-list .l1{
+        margin-top: 5%;
+    }
+
+    .phone-item-list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .phone-item{
+        text-align: center;
+        width: 33vw;
+        margin: 5% 0;
+    }
+    .tablet-item-list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .tablet-item{
+        text-align: center;
+        width: 33vw;
+        margin: 5% 0;
+    }
+    .laptop-item-list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .laptop-item{
+        text-align: center;
+        width: 33vw;
+        margin: 5% 0;
+    }
+
+    .phone-list .phone-item-list .phone-item img{
+        width: 13rem;
+        height: 25rem;
+    }
+    .tablet-list .tablet-item-list .tablet-item img{
+        width: 13rem;
+        height: 25rem;
+    }
+    .laptop-list .laptop-item-list .laptop-item img{
+        width: 18rem;
+        height: 12rem;
+    }
+    .phone-list .phone-item-list .phone-item p{
+       font-size: 80%;
+    }
+    .tablet-list .tablet-item-list .tablet-item p{
+        font-size: 90%;
+     }
+    .laptop-list .laptop-item-list .laptop-item p{
+        font-size: 90%;
+    }
+
+    .footer{
+        position: static;
+        width: 20%;
+    }
+
+    .footer button{
+        background-color: #ffffff;
+        color: #000000;
+        margin: 0 0 100% 365%;
+        height: 3rem;
+        width: 10rem;
+    }
+
+    .single-phone-detail{
+        display: flex;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .single-phone-detail-image img{
+        width: 15rem;
+        height: 30rem;
+    }
+    .single-phone-detail-image{
+        float: left;
+        width: 40%;
+    }
+    .single-phone-detail-description{
+        float: right;
+        width: 60%;
+        padding: 0 4%;
+    }
+
+    .single-phone-detail-description .phone-specification .l1{
+        margin: 2% 0;
+    }
+
+    .phone-specification .phone-ram span .image{
+        margin-left: 75%;
+        margin-right: 0;
+    }
+    .phone-specification .phone-memory span .image{
+        margin-left: 70%;
+        margin-right: 0;
+    }
+    .phone-specification .phone-quantity span .image{
+        margin-left: 74.6%;
+        margin-right: 0;
+    }
+
+    .single-phone-detail-description .price{
+        font-size: 90%;
+    }
+
+    .single-tablet-detail{
+        display: flex;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .single-tablet-detail-image img{
+        width: 15rem;
+        height: 30rem;
+    }
+    .single-tablet-detail-image{
+        float: left;
+        width: 40%;
+    }
+    .single-tablet-detail-description{
+        float: right;
+        width: 60%;
+        padding: 0 4%;
+    }
+
+    .single-tablet-detail-description .tablet-specification .l1{
+        margin: 2% 0;
+    }
+
+    .tablet-specification .tablet-ram span .image{
+        margin-left: 75%;
+        margin-right: 0;
+    }
+    .tablet-specification .tablet-memory span .image{
+        margin-left: 70%;
+        margin-right: 0;
+    }
+    .tablet-specification .tablet-quantity span .image{
+        margin-left: 74.6%;
+        margin-right: 0;
+    }
+
+    .single-tablet-detail-description .price{
+        font-size: 90%;
+    }
+
+    .single-laptop-detail{
+        display: flex;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .single-laptop-detail-image img{
+        width: 20rem;
+        height: 20rem;
+    }
+    .single-laptop-detail-image{
+        float: left;
+        width: 40%;
+    }
+    .single-laptop-detail-description{
+        float: right;
+        width: 60%;
+        padding: 0 4%;
+    }
+
+    .single-laptop-detail-description .laptop-specification .l1{
+        margin: 2% 0;
+    }
+
+    .laptop-specification .laptop-ram span .image{
+        margin-left: 75%;
+        margin-right: 0;
+    }
+    .laptop-specification .laptop-memory span .image{
+        margin-left: 70%;
+        margin-right: 0;
+    }
+    .laptop-specification .laptop-quantity span .image{
+        margin-left: 74.6%;
+        margin-right: 0;
+    }
+
+    .single-laptop-detail-description .price{
+        font-size: 90%;
+    }
+
+
+    .phone-cart-specification{
+        padding: 0 5%;
+    }
+    .phone-cart-specs{
+        display: flex;
+    }
+    .phone-cart-specs div:nth-child(odd){
+        width: 30%;
+        text-align: center;
+    }
+    .phone-cart-specs div:nth-child(even){
+        width: 40%;
+        text-align: center;
+    }
+    .phone-cart-specs div:nth-child(3n){
+        margin-top: 4%;
+    }
+
+    .phone-cart .phone-cart-details .phone-cart-product-image img{
+        width: 5rem;
+        height: 10rem;
+    }
+
+    .phone-cart-specification .phone-cart-name h1{
+        font-size: 100%;
+    }
+
+    .total-cart-price{
+        margin-left: 55%;
+        margin-bottom: 2%;
+    }
+
+    .checkout-info .checkout-details{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .check_1{
+        width: 40%;
+        padding: 0 5%;
+    }
+    .check_2{
+        width: 40%;
+        padding: 0 5%;
+    }
+    .check_2 .payment-info{
+        margin-top: 0;
+    }
+    .check_2 .order-details .product-details span:nth-child(even){
+        margin-left: 32%;
+    }
+
+    .cart-home-footer{
+        display: block;
+    }
+    .checkout-home-footer{
+        display: block;
+    }
+
+    .cart-home-footer{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .cart-home-footer p{
+     color: #000000;
+     font-weight: 100;
+     font-size: small;
+    }
+    .cart-home-footer div{
+        background-color: black;
+        height: 2rem;
+        color: #ffffff;
+        width: 15vw;
+        line-height: 2rem;
+        margin: auto;
+        font-size:small;
+    }
+
+    .checkout-home-footer{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .checkout-home-footer p{
+     color: #000000;
+     font-weight: 100;
+     font-size: small;
+    }
+    .checkout-home-footer div{
+        background-color: black;
+        height: 2rem;
+        color: #ffffff;
+        width: 150vw;
+        line-height: 2rem;
+        margin: auto;
+        font-size:small;
+        bottom: 0;
+    }
+    .cart-footer{
+        position: relative;
+        z-index: 2;
+        width: 20%;
+        margin-top: -5%;
+    }
+    .cart-footer button{
+        background-color: #ffffff;
+        color: #000000;
+        margin-left: 350%;
+        height: 3rem;
+    }
+    .checkout-home-footer{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .checkout-home-footer p{
+     color: #000000;
+     font-weight: 100;
+     font-size: small;
+    }
+    .checkout-home-footer div{
+        background-color: black;
+        height: 2rem;
+        color: #ffffff;
+        width: 15vw;
+        line-height: 2rem;
+        margin: auto;
+        font-size:small;
+    }
+    .checkout-place-footer{
+        position: relative;
+        z-index: 1;
+        margin-top: -42%;
+    }
+    .checkout-place-footer button{
+        background-color: #ffffff;
+        color: #000000;
+        width: 15%;
+        height: 3rem;
+        margin-left: 54%;
+    }
+}
+
+/* laptop resolution */
+
+@media screen and (min-width: 1101px){
+    .home-header{
+        height: 8rem;
+    }
+    .home-header .home-product-category img{
+        display: none;
+    }
+    .home-product-list{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 33%;
+        width: 40%;
+    }
+    .home-product-list div{
+        font-size: 80%;
+        margin: 0 9.5%;
+        text-align: center;
+    }
+    .home-product-list a{
+        text-decoration: none;
+        color: #000000;
+        width: 33%;
+    }
+    .home-header .home-shop{
+        margin-top: 3%;
+    }
+    .home-header .home-cart-logo img{
+        margin-left: 80%;
+        margin-top: 7%;
+    }
+    .home-product-section img{
+        height: 40rem;
+    }
+    .home-product-section .home_button_1{
+        width: 12%;
+        margin-left: 44%;
+        margin-right: 44%;
+    }
+    .home-footer div{
+        width: 12%;
+    }
+    .phone-list .phone-image, .tablet-list .tablet-image , .laptop-list .laptop-image{
+        display: block;
+        width: 100%;
+        height: 40rem;
+    }
+    .phone-list .l1, .tablet-list .l1, .laptop-list .l1{
+        margin-top: 5%;
+    }
+
+    .phone-item-list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .phone-item{
+        text-align: center;
+        width: 33vw;
+        margin: 5% 0;
+    }
+    .tablet-item-list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .tablet-item{
+        text-align: center;
+        width: 33vw;
+        margin: 5% 0;
+    }
+    .laptop-item-list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .laptop-item{
+        text-align: center;
+        width: 33vw;
+        margin: 5% 0;
+    }
+
+    .phone-list .phone-item-list .phone-item img{
+        width: 15rem;
+        height: 27rem;
+    }
+    .tablet-list .tablet-item-list .tablet-item img{
+        width: 15rem;
+        height: 27rem;
+    }
+    .laptop-list .laptop-item-list .laptop-item img{
+        width: 20rem;
+        height: 14rem;
+    }
+    .phone-list .phone-item-list .phone-item p{
+       font-size: 85%;
+    }
+    .tablet-list .tablet-item-list .tablet-item p{
+        font-size: 95%;
+     }
+    .laptop-list .laptop-item-list .laptop-item p{
+        font-size: 95%;
+    }
+
+    .footer{
+        position: static;
+        width: 20%;
+    }
+
+    .footer button{
+        background-color: #ffffff;
+        color: #000000;
+        margin: 0 0 100% 365%;
+        height: 3rem;
+        width: 8rem;
+    }
+
+    .single-phone-detail{
+        display: flex;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .single-phone-detail-image img{
+        width: 15rem;
+        height: 30rem;
+    }
+    .single-phone-detail-image{
+        float: left;
+        width: 40%;
+    }
+    .single-phone-detail-description{
+        float: right;
+        width: 60%;
+        padding: 0 4%;
+    }
+
+    .single-phone-detail-description .phone-specification .l1{
+        margin: 2% 0;
+    }
+
+    .phone-specification .phone-ram span .image{
+        margin-left: 75%;
+        margin-right: 0;
+    }
+    .phone-specification .phone-memory span .image{
+        margin-left: 71.5%;
+        margin-right: 0;
+    }
+    .phone-specification .phone-quantity span .image{
+        margin-left: 74.6%;
+        margin-right: 0;
+    }
+
+    .single-phone-detail-description .price{
+        font-size: 100%;
+    }
+    .single-phone-detail-description ul{
+        font-size: 120%;
+    }
+
+    .single-tablet-detail{
+        display: flex;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .single-tablet-detail-image img{
+        width: 15rem;
+        height: 30rem;
+    }
+    .single-tablet-detail-image{
+        float: left;
+        width: 40%;
+    }
+    .single-tablet-detail-description{
+        float: right;
+        width: 60%;
+        padding: 0 4%;
+    }
+
+    .single-tablet-detail-description .tablet-specification .l1{
+        margin: 2% 0;
+    }
+
+    .single-tablet-detail-description ul{
+        font-size: 120%;
+    }
+
+    .tablet-specification .tablet-ram span .image{
+        margin-left: 75%;
+        margin-right: 0;
+    }
+    .tablet-specification .tablet-memory span .image{
+        margin-left: 71.5%;
+        margin-right: 0;
+    }
+    .tablet-specification .tablet-quantity span .image{
+        margin-left: 74.6%;
+        margin-right: 0;
+    }
+
+    .single-tablet-detail-description .price{
+        font-size: 100%;
+    }
+
+    .single-laptop-detail{
+        display: flex;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .single-laptop-detail-image img{
+        width: 25rem;
+        height: 20rem;
+    }
+    .single-laptop-detail-image{
+        float: left;
+        width: 40%;
+    }
+    .single-laptop-detail-description{
+        float: right;
+        width: 60%;
+        padding: 0 4%;
+    }
+    .single-laptop-detail-description ul{
+        font-size: 120%;
+    }
+
+    .single-laptop-detail-description .laptop-specification .l1{
+        margin: 2% 0;
+    }
+
+    .laptop-specification .laptop-ram span .image{
+        margin-left: 75%;
+        margin-right: 0;
+    }
+    .laptop-specification .laptop-memory span .image{
+        margin-left: 70.5%;
+        margin-right: 0;
+    }
+    .laptop-specification .laptop-quantity span .image{
+        margin-left: 74.6%;
+        margin-right: 0;
+    }
+
+    .single-laptop-detail-description .price{
+        font-size: 100%;
+    }
+
+    .footer button{
+        width: 60%;
+    }
+    .phone-cart-specification{
+        padding: 0 5%;
+    }
+    .phone-cart-specs{
+        display: flex;
+        font-size: 120%;
+    }
+    .phone-cart-specs div:nth-child(odd){
+        width: 30%;
+        text-align: center;
+    }
+    .phone-cart-specs div:nth-child(even){
+        width: 40%;
+        text-align: center;
+    }
+    .phone-cart-specs div:nth-child(3n){
+        margin-top: 4%;
+    }
+
+    .phone-cart .phone-cart-details .phone-cart-product-image img{
+        width: 8rem;
+        height: 15rem;
+    }
+
+    .phone-cart-specification .phone-cart-name h1{
+        font-size: 150%;
+    }
+
+    .total-cart-price{
+        margin-left: 55%;
+        margin-bottom: 2%;
+    }
+
+    .checkout-info .checkout-details{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .check_1{
+        width: 40%;
+        padding: 0 5%;
+    }
+    .check_2{
+        width: 40%;
+        padding: 0 5%;
+    }
+    .check_2 .payment-info{
+        margin-top: 0;
+    }
+    .check_2 .order-details .product-details span:nth-child(even){
+        margin-left: 45%;
+    }
+
+    .order-details .total-price span:nth-child(even){
+        margin-left: 76%;
+    }
+    .cart-home-footer{
+        display: block;
+    }
+    .checkout-home-footer{
+        display: block;
+    }
+
+    .cart-home-footer{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .cart-home-footer p{
+     color: #000000;
+     font-weight: 100;
+     font-size: small;
+    }
+    .cart-home-footer div{
+        background-color: black;
+        height: 2rem;
+        color: #ffffff;
+        width: 15vw;
+        line-height: 2rem;
+        margin: auto;
+        font-size:small;
+    }
+
+    .checkout-home-footer{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .checkout-home-footer p{
+     color: #000000;
+     font-weight: 100;
+     font-size: small;
+    }
+    .checkout-home-footer div{
+        background-color: black;
+        height: 2rem;
+        color: #ffffff;
+        width: 150vw;
+        line-height: 2rem;
+        margin: auto;
+        font-size:small;
+        bottom: 0;
+    }
+    .cart-footer{
+        position: relative;
+        z-index: 2;
+        width: 20%;
+        margin-top: -4%;
+    }
+    .cart-footer button{
+        background-color: #ffffff;
+        color: #000000;
+        margin-left: 350%;
+        height: 3rem;
+        width: 92%;
+    }
+    .checkout-home-footer{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .checkout-home-footer p{
+     color: #000000;
+     font-weight: 100;
+     font-size: small;
+    }
+    .checkout-home-footer div{
+        background-color: black;
+        height: 2rem;
+        color: #ffffff;
+        width: 15vw;
+        line-height: 2rem;
+        margin: auto;
+        font-size:small;
+    }
+    .checkout-place-footer{
+        position: relative;
+        z-index: 1;
+        margin-top: -40%;
+    }
+    .checkout-place-footer button{
+        background-color: #ffffff;
+        color: #000000;
+        width: 15%;
+        height: 3rem;
+        margin-left: 54%;
+    }
+    .payment-info .card-details input{
+        width: 31.5%;
+    }
 }
